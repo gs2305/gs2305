@@ -4,16 +4,54 @@
     <title>환영 메세지</title>
     <meta charset="utf-8">
     <style>
-       a{
-        text-decoration: none;
-       }
-
+        .find-btn{
+	text-align: center;
+    }
+        .find-btn1{
+	display :inline-block;
+    }
+        .block1 {
+    width: 100px;
+    height: 50px;
+    margin-left: 42%;}
+    
     </style>
+<link rel="stylesheet" href="style.css">
+<script>
+    function a() {
+        alert('환영합니다')
+        location.href='main.html'
+
+
+    }
+    function b() {
+        location.href='singup.html'
+
+
+
+    }
+
+
+
+</script>
+
 
 </head>
 
 <body>
 <h1 style=color:gold;text-align:center;font-size:100px;><a style="text-decoration: none;" href="main.html">태영이의 사이트</a></h1>
-<h1 style="color:rgb(0, 229, 255); text-align: center;font-size: 80px;"><a style="text-decoration: none;" href="main.html">환영합니다</a></h1>
+<h1><button onclick="a()">환영합니다</button></h1>
+
+<div>
+<h3 class="btn btn-navy navbar-btn find-btn1 block1">이메일</h3> <input type="text" placeholder="이메일을 입력해 주세요.">
+<br><h3 class="btn btn-navy navbar-btn find-btn1 block1">비밀번호</h3> <input type="text" placeholder="비밀번호을 입력해 주세요.">
+
+<div class="find-btn">
+    <button onclick="a()" type="button" class="btn btn-navy navbar-btn find-btn1">로그인</button>
+    <button onclick="b()" type="button" class="btn btn-grey navbar-btn find-btn1">회원가입</button>
+</div>
+ 
+
+</div>
 </body>
 </html>
